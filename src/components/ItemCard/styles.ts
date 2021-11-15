@@ -34,6 +34,7 @@ export const ItemCardContainer = styled.article`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    word-break: break-all;
   }
 
   .info {
@@ -46,7 +47,8 @@ export const ItemCardContainer = styled.article`
     gap: 1rem;
     padding: 1.75em 2em 1.43em 1.5em;  
 
-    h3 {
+    h3, p {
+      word-break: break-all;
       font-weight: 400;
     }
   }
