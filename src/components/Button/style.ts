@@ -18,6 +18,6 @@ export const ButtonContainer = styled.button<CustomProps>`
 
   &:disabled {
     cursor: not-allowed;
-    background: grey;
+    filter: brightness(0.5);
   }
 `

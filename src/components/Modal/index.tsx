@@ -45,7 +45,10 @@ export const Modal: React.FC<ModalProps> = ({ children, modalStatus, itemToDelet
   return modalRootElement ? 
     ReactDOM.createPortal(
       <ModalOverlay>
-        <ModalContainer role="dialog" aria-modal>
+        <ModalContainer role="dialog" aria-modal style={{
+          transform: modalStatus.type === "delete" ? 'translateY(-25vh)' : 'none',
+          padding:  modalStatus.type === "delete" ? '1.75em 2em 1.43em 1.5em' : 0
+        }}>
           {children}
           
           {modalStatus.type === 'form' ? (

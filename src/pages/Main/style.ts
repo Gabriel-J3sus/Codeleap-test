@@ -9,7 +9,7 @@ export const MainContainer = styled.section`
   background: var(--cl-white);
   
   > header {
-    padding: 2vh 0 2vh 5vw;
+    padding: 3vh 0 3vh 5vw;
     
     background: var(--cl-black);
     color: var(--cl-white);

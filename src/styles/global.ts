@@ -29,7 +29,7 @@ export const GlobalStyle = createGlobalStyle`
   
   @media (max-width: 420px) {
     html {
-      font-size: 87.5%; //15px
+      font-size: 87.5%; //14px
     }
   }
   
@@ -39,32 +39,33 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
   
-  @media (min-width: 1020px) {
+  @media (min-width: 820px) {
     html {
       font-size: 100%; //16px
     }
   }
-  @media (min-width: 1480px) {
+
+  @media (min-width: 1240px) {
     html {
       font-size: 106.25%; //17px
     }
   }
-  @media (min-width: 2080px) {
+
+  @media (min-width: 1660px) {
     html {
       font-size: 112.5%; //18px
     }
   }
 
-  @media (min-width: 2275px) {
+  @media (min-width: 1820px) {
     html {
-      font-size: 175%; //28px
+      font-size: 125%; //20px
     }
   }
 
-  @media (min-width: 2420px) {
+  @media (min-width: 2340px) {
     html {
-      font-size: 200%; //32px
+      font-size: 150%; //24px
     }
   }
-
 `

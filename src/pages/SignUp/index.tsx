@@ -32,6 +32,7 @@ export function SignUp() {
           <CustomInput 
             customType="normalText" 
             id="username" 
+            placeholder="John doe"
             value={username} 
             onChange={(e) => setUsername(e.target.value)}
             required

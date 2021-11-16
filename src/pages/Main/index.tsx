@@ -34,6 +34,10 @@ export function Main() {
 
   function handleEdit(e: FormEvent, item?: ItemToUpdate) {
     e.preventDefault()
+  
+    // In order to not make an http request every time the button is pressed
+    const itemInAllItens = itens.find(el => el.id === item?.id && el)
+    if (item?.title === itemInAllItens?.title && item?.content === itemInAllItens?.content) return;
 
     dispatch(updateItemRequest({
       data: item as Required<ItemToUpdate>

@@ -44,7 +44,7 @@ export const ItemForm: React.FC<ItemFormProps> = ({ children, title, type, handl
           <CustomInput 
             customType="textArea" 
             id="content" 
-            placeholder="Hello world" 
+            placeholder="Content here" 
             value={props.item.content}
             onChange={(e) => props.setItem({ ...props.item, content: e.target.value })}
             required

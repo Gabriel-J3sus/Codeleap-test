@@ -7,10 +7,10 @@ export const SignUpContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 8vw;
+  padding: 0 20vw;
 
   .wrapper {
-    width: 100%;
+    flex: 1;
     padding: 1.75rem 2rem 1.43rem 1.5rem;  
     display: flex;
     flex-direction: column;
@@ -37,9 +37,7 @@ export const SignUpContainer = styled.section`
     }
   }
 
-  @media(max-width: 2080px) {
-    .wrapper {
-      max-width: 720px;
-    }
+  @media(max-width: 820px) {
+    padding: 0 8vw;
   }
 `

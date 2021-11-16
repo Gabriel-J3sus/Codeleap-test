@@ -6,22 +6,24 @@ export const ModalOverlay = styled.div`
   position: fixed;
   inset: 0;
   z-index: 999999;
-  padding: 0 8vw;
+  padding: 0 20vw;
 
   display: flex;
   align-items: center;
   justify-content: center;
   background: rgba(119, 119, 119, 0.8);
+
+  @media(max-width: 820px) {
+    padding: 0 8vw;
+  }
 `
 
 export const ModalContainer = styled.div`
   position: relative;
-  max-width: 720px;
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 2.1rem; 
-  padding: 1.75em 2em 1.43em 1.5em; 
   
   background: var(--cl-white);
   border: 1px solid var(--cl-detail);

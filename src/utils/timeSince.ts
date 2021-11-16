@@ -7,33 +7,33 @@ export const timeSince = function(date: Date) {
     return "just now";
 
   } else if (seconds < 60) {
-    return seconds + "sec ago";
+    return seconds + " seconds ago";
   
   } else if (seconds < 3600) {
     const minutes = Math.floor(seconds/60)
 
     if(minutes > 1) {
-      return minutes + "min ago";
+      return minutes + " minutes ago";
     } else {
-      return "1min ago";
+      return "1 minutes ago";
     }
 
   } else if (seconds < 86400) {
     const hours = Math.floor(seconds/3600)
 
     if(hours > 1)
-      return hours + "h ago";
+      return hours + " hour ago";
     else
-      return "1h ago";
+      return "1 hour ago";
   }
   //more than 2 days
   else if (seconds < 172800) {
     const days = Math.floor(seconds/86400)
 
     if(days > 1)
-      return days + "d ago";
+      return days + " days ago";
     else
-      return "1d ago";
+      return "1 day ago";
       
   } else{
     //return new Date(time).toLocaleDateString();
